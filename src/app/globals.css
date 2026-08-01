@@ -106,3 +106,15 @@ body {
 .line-reveal > span {
   display: inline-block;
 }
+
+/* Fullpage mode */
+html.fullpage-lock,
+body.fullpage-lock {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.fullpage-root {
+  touch-action: none;
+}

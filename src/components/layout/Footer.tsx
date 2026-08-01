@@ -1,49 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import { Reveal } from "@/components/ui/Reveal";
 
 export function Footer() {
   return (
-    <footer className="border-t border-psy-white/10 bg-[#0b0b0b] text-psy-white">
-      <div className="mx-auto flex max-w-[1280px] flex-col gap-10 px-5 py-12 md:flex-row md:items-end md:justify-between md:px-8 md:py-14 lg:px-10">
-        <Reveal>
-          <div className="flex items-center gap-4">
-            <Image
-              src="/brand/mask-icon.jpg"
-              alt=""
-              width={48}
-              height={48}
-              className="size-12 object-cover"
-            />
-            <div>
-              <p className="font-display text-lg font-bold tracking-[0.06em] uppercase md:text-xl">
-                LES PSY
-                <span className="align-super text-[9px]">™</span>
-              </p>
-              <p className="mt-1 text-[11px] tracking-[0.18em] text-psy-white/40 uppercase">
-                Design · Fabrication · Impression
-              </p>
-            </div>
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <div className="flex flex-col gap-3 text-[11px] tracking-[0.18em] text-psy-white/45 uppercase md:items-end">
-            <p>© {new Date().getFullYear()} LES PSY</p>
-            <div className="flex gap-6">
-              <a href="#top" className="transition-colors hover:text-psy-white">
-                Haut de page
-              </a>
-              <a
-                href="mailto:hello@lespsy.agency"
-                className="transition-colors hover:text-psy-red"
-              >
-                Email
-              </a>
-            </div>
-          </div>
-        </Reveal>
+    <footer className="shrink-0 border-t border-psy-white/10 bg-[#0b0b0b] text-psy-white">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-5 py-4 md:px-8 lg:px-10">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/brand/mask-icon.jpg"
+            alt=""
+            width={36}
+            height={36}
+            className="size-8 object-cover"
+          />
+          <p className="text-[10px] tracking-[0.18em] text-psy-white/45 uppercase md:text-[11px]">
+            Design · Fabrication · Impression
+          </p>
+        </div>
+        <p className="text-[10px] tracking-[0.18em] text-psy-white/40 uppercase md:text-[11px]">
+          © {new Date().getFullYear()} LES PSY
+        </p>
       </div>
     </footer>
   );

@@ -15,7 +15,7 @@ export function Contact() {
     const email = String(data.get("email") || "");
     const message = String(data.get("message") || "");
 
-    const subject = encodeURIComponent(`Projet LES PSY — ${name}`);
+    const subject = encodeURIComponent(`Devis LES PSY — ${name}`);
     const body = encodeURIComponent(
       `Nom : ${name}\nEmail : ${email}\n\n${message}`,
     );
@@ -25,10 +25,7 @@ export function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="relative overflow-hidden bg-[#0b0b0b] py-28 text-psy-white md:py-36 lg:py-44"
-    >
+    <div className="relative flex h-full flex-col justify-center overflow-hidden bg-[#0b0b0b] px-5 py-20 text-psy-white md:px-8 lg:px-10">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-30"
@@ -40,32 +37,32 @@ export function Contact() {
           backgroundSize: "72px 72px",
         }}
       />
-      <div className="pointer-events-none absolute -right-24 top-10 size-[420px] rounded-full bg-psy-red/20 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-24 top-10 size-[320px] rounded-full bg-psy-red/20 blur-[120px]" />
 
-      <div className="relative mx-auto grid max-w-[1280px] gap-16 px-5 md:grid-cols-[1.1fr_0.9fr] md:gap-20 md:px-8 lg:px-10">
+      <div className="relative mx-auto grid w-full max-w-[1280px] gap-12 md:grid-cols-[1.05fr_0.95fr] md:gap-16">
         <div>
           <Reveal>
-            <p className="mb-6 text-[11px] font-medium tracking-[0.28em] text-psy-white/45 uppercase">
+            <p className="mb-4 text-[11px] font-medium tracking-[0.28em] text-psy-white/45 uppercase">
               Contact
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95] font-bold tracking-[-0.04em]">
+            <h2 className="font-display text-[clamp(2rem,5vw,4rem)] leading-[0.95] font-bold tracking-[-0.04em]">
               Un projet
               <br />
               à produire&nbsp;?
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
-            <p className="mt-8 max-w-md text-base leading-relaxed text-psy-white/55">
+            <p className="mt-6 max-w-md text-[15px] leading-relaxed text-psy-white/55">
               Design, fabrication ou impression — dis-nous ce dont tu as besoin.
-              On te répond avec un devis clair, pas un discours flou.
+              Devis clair, sans discours flou.
             </p>
           </Reveal>
           <Reveal delay={0.22}>
             <a
               href="mailto:hello@lespsy.agency"
-              className="mt-10 inline-flex text-sm tracking-[0.08em] text-psy-white transition-colors hover:text-psy-red"
+              className="mt-8 inline-flex text-sm tracking-[0.08em] text-psy-white transition-colors hover:text-psy-red"
             >
               hello@lespsy.agency
             </a>
@@ -73,18 +70,18 @@ export function Contact() {
         </div>
 
         <Reveal delay={0.18}>
-          <form onSubmit={onSubmit} className="space-y-8">
+          <form onSubmit={onSubmit} className="space-y-6">
             <Field label="Nom" name="name" type="text" required />
             <Field label="Email" name="email" type="email" required />
             <label className="block">
-              <span className="mb-3 block text-[11px] tracking-[0.22em] text-psy-white/45 uppercase">
+              <span className="mb-2 block text-[11px] tracking-[0.22em] text-psy-white/45 uppercase">
                 Message
               </span>
               <textarea
                 name="message"
                 required
-                rows={4}
-                className="w-full resize-none border-b border-psy-white/20 bg-transparent py-3 text-psy-white outline-none transition-colors placeholder:text-psy-white/25 focus:border-psy-red"
+                rows={3}
+                className="w-full resize-none border-b border-psy-white/20 bg-transparent py-2 text-psy-white outline-none transition-colors placeholder:text-psy-white/25 focus:border-psy-red"
                 placeholder="Parle-nous du projet…"
               />
             </label>
@@ -92,12 +89,12 @@ export function Contact() {
             <ArrowButton
               label={sent ? "Ouverture mail…" : "Envoyer"}
               variant="red"
-              className="mt-4"
+              className="mt-2"
             />
           </form>
         </Reveal>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -114,14 +111,14 @@ function Field({
 }) {
   return (
     <label className="block">
-      <span className="mb-3 block text-[11px] tracking-[0.22em] text-psy-white/45 uppercase">
+      <span className="mb-2 block text-[11px] tracking-[0.22em] text-psy-white/45 uppercase">
         {label}
       </span>
       <input
         name={name}
         type={type}
         required={required}
-        className="w-full border-b border-psy-white/20 bg-transparent py-3 text-psy-white outline-none transition-colors placeholder:text-psy-white/25 focus:border-psy-red"
+        className="w-full border-b border-psy-white/20 bg-transparent py-2 text-psy-white outline-none transition-colors focus:border-psy-red"
         placeholder=" "
       />
     </label>

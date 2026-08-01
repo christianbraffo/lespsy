@@ -6,12 +6,12 @@ const steps = [
   {
     number: "01",
     title: "Brief",
-    text: "Besoin, contraintes, volumes, délais. On cadre le projet avant de lancer la création.",
+    text: "Besoin, contraintes, volumes, délais. On cadre avant de créer.",
   },
   {
     number: "02",
     title: "Création",
-    text: "Direction artistique, maquettes, validation. Le fichier est prêt pour la production.",
+    text: "Direction artistique, maquettes, validation. Fichier prêt à produire.",
   },
   {
     number: "03",
@@ -22,34 +22,31 @@ const steps = [
 
 export function Approach() {
   return (
-    <section
-      id="approche"
-      className="surface-grain relative bg-psy-white py-28 md:py-36 lg:py-44"
-    >
-      <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+    <div className="surface-grain flex h-full flex-col justify-center overflow-hidden bg-psy-white px-5 py-24 md:px-10">
+      <div className="mx-auto w-full max-w-[1400px]">
         <Reveal>
-          <p className="mb-6 text-[11px] font-medium tracking-[0.28em] text-psy-muted uppercase">
+          <p className="mb-4 text-[11px] font-medium tracking-[0.28em] text-psy-muted uppercase">
             Process
           </p>
         </Reveal>
         <Reveal delay={0.08}>
-          <h2 className="font-display max-w-2xl text-[clamp(2rem,4.8vw,3.75rem)] leading-[1.05] font-bold tracking-[-0.03em] text-psy-black">
+          <h2 className="font-display max-w-2xl text-[clamp(1.9rem,4vw,3.2rem)] leading-[1.05] font-bold tracking-[-0.03em] text-psy-black">
             Trois étapes.{" "}
             <span className="text-psy-red italic">Zéro flou.</span>
           </h2>
         </Reveal>
 
-        <ol className="mt-16 grid gap-12 border-t border-psy-black/10 pt-14 md:mt-20 md:grid-cols-3 md:gap-10 md:pt-16">
+        <ol className="mt-12 grid gap-10 border-t border-psy-black/10 pt-10 md:grid-cols-3 md:gap-8">
           {steps.map((step, index) => (
             <Reveal key={step.number} delay={0.1 * index}>
               <li>
                 <span className="font-display text-sm font-semibold tracking-[0.18em] text-psy-red">
                   {step.number}
                 </span>
-                <h3 className="font-display mt-5 text-3xl font-bold tracking-[-0.02em] text-psy-black md:text-4xl">
+                <h3 className="font-display mt-4 text-3xl font-bold tracking-[-0.02em] text-psy-black">
                   {step.title}
                 </h3>
-                <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-psy-black/60">
+                <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-psy-black/60">
                   {step.text}
                 </p>
               </li>
@@ -57,6 +54,6 @@ export function Approach() {
           ))}
         </ol>
       </div>
-    </section>
+    </div>
   );
 }
