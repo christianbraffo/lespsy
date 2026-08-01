@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --psy-black: #0a0a0a;
+  --psy-red: #e23a1b;
+  --psy-white: #fafafa;
+  --psy-muted: #8a8a8a;
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-psy-black: var(--psy-black);
+  --color-psy-red: var(--psy-red);
+  --color-psy-white: var(--psy-white);
+  --color-psy-muted: var(--psy-muted);
+  --font-display: var(--font-syne);
+  --font-body: var(--font-instrument);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+body {
+  background: var(--psy-white);
+  color: var(--psy-black);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--psy-red);
+  color: var(--psy-white);
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Soft grain for atmosphere — not flat */
+.surface-grain {
+  position: relative;
+}
+
+.surface-grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.cta-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cta-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--psy-red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.65s var(--ease-out-expo);
+  z-index: -1;
+}
+
+.cta-fill:hover::before,
+.cta-fill:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.cta-fill-light::before {
+  background: var(--psy-white);
+}
+
+.line-reveal {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.line-reveal > span {
+  display: inline-block;
+}
