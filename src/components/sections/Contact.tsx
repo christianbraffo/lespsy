@@ -53,13 +53,13 @@ export function Contact() {
             <h2 className="font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95] font-bold tracking-[-0.04em]">
               Un projet
               <br />
-              à décrypter&nbsp;?
+              à produire&nbsp;?
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-8 max-w-md text-base leading-relaxed text-psy-white/55">
-              Dis-nous qui tu es et ce que tu veux faire ressentir. On te
-              répond avec précision — pas avec un template.
+              Design, fabrication ou impression — dis-nous ce dont tu as besoin.
+              On te répond avec un devis clair, pas un discours flou.
             </p>
           </Reveal>
           <Reveal delay={0.22}>

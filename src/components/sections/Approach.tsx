@@ -5,18 +5,18 @@ import { Reveal } from "@/components/ui/Reveal";
 const steps = [
   {
     number: "01",
-    title: "Écouter",
-    text: "Immersion, lecture du contexte, détection des non-dits. On commence par comprendre avant de produire.",
+    title: "Brief",
+    text: "Besoin, contraintes, volumes, délais. On cadre le projet avant de lancer la création.",
   },
   {
     number: "02",
-    title: "Décrypter",
-    text: "Insights, tension créative, territoire. On isole le signal qui fera basculer la perception.",
+    title: "Création",
+    text: "Direction artistique, maquettes, validation. Le fichier est prêt pour la production.",
   },
   {
     number: "03",
-    title: "Faire parler",
-    text: "Forme, récit, diffusion. Une expression nette qui traverse les supports sans se diluer.",
+    title: "Production",
+    text: "Fabrication, impression, contrôle qualité. Livraison du support fini.",
   },
 ];
 
@@ -29,12 +29,12 @@ export function Approach() {
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <Reveal>
           <p className="mb-6 text-[11px] font-medium tracking-[0.28em] text-psy-muted uppercase">
-            Approche
+            Process
           </p>
         </Reveal>
         <Reveal delay={0.08}>
           <h2 className="font-display max-w-2xl text-[clamp(2rem,4.8vw,3.75rem)] leading-[1.05] font-bold tracking-[-0.03em] text-psy-black">
-            Trois temps.{" "}
+            Trois étapes.{" "}
             <span className="text-psy-red italic">Zéro flou.</span>
           </h2>
         </Reveal>

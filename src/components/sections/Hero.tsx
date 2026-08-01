@@ -104,7 +104,7 @@ export function Hero() {
                   animate={{ y: "0%" }}
                   transition={{ duration: 0.95, delay: 0.45, ease }}
                 >
-                  Pas juste du design.
+                  Design. Fabrication.
                 </motion.span>
               </span>
               <span className="line-reveal mt-1 block md:mt-2">
@@ -114,7 +114,7 @@ export function Hero() {
                   animate={{ y: "0%" }}
                   transition={{ duration: 0.95, delay: 0.58, ease }}
                 >
-                  Une révolution de marque.
+                  Impression.
                 </motion.span>
               </span>
             </h1>
@@ -127,12 +127,12 @@ export function Hero() {
             className="md:justify-self-end md:text-right"
           >
             <p className="max-w-sm text-[14px] leading-relaxed text-psy-white/70 md:ml-auto md:text-[15px]">
-              Nous aidons les marques à créer des identités magnétiques et des
-              récits qui font parler — et agir.
+              Studio créatif : on conçoit, on fabrique, on imprime. De l’idée au
+              support fini — net, tactile, mémorable.
             </p>
             <ArrowCta
               href="#contact"
-              label="Démarrer un projet"
+              label="Demander un devis"
               variant="red"
               className="mt-6"
             />

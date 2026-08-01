@@ -16,9 +16,9 @@ const instrument = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "LES PSY — Agence de communication",
+  title: "LES PSY — Studio design, fabrication & impression",
   description:
-    "Agence de communication. Stratégie, identité, contenu — pour les marques qui refusent le bruit.",
+    "Studio de design, fabrication et impression. De l’idée au support fini — précision, matière, impact.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

@@ -6,20 +6,20 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const projects = [
   {
-    title: "Double face",
-    discipline: "Identité visuelle",
+    title: "Édition rouge",
+    discipline: "Impression & finitions",
     image: "/brand/logo-full-red.jpg",
     tone: "red" as const,
   },
   {
-    title: "Lecture nocturne",
-    discipline: "Brand content",
+    title: "Identité noire",
+    discipline: "Design graphique",
     image: "/brand/wordmark-black.jpg",
     tone: "black" as const,
   },
   {
-    title: "Signal rouge",
-    discipline: "Campagne",
+    title: "Signal print",
+    discipline: "Fabrication PLV",
     image: "/brand/mask-red.jpg",
     tone: "white" as const,
   },
@@ -36,7 +36,7 @@ export function Work() {
         </Reveal>
         <Reveal delay={0.08}>
           <h2 className="font-display max-w-3xl text-[clamp(2rem,4.8vw,3.75rem)] leading-[1.05] font-bold tracking-[-0.03em] text-psy-black">
-            Des signes qui restent.
+            Des pièces qui tiennent.
           </h2>
         </Reveal>
       </div>

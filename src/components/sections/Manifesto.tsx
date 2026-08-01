@@ -6,22 +6,22 @@ import { Reveal, RevealText } from "@/components/ui/Reveal";
 const beliefs = [
   {
     num: "01",
-    title: "Observer",
-    text: "Chaque marque cache une tension. On la cherche avant de produire.",
+    title: "Concevoir",
+    text: "Identité, supports, mise en page — une direction claire avant la moindre production.",
   },
   {
     num: "02",
-    title: "Traduire",
-    text: "L’insight devient signe, récit, système — net et mémorable.",
+    title: "Fabriquer",
+    text: "Choix des matières, finitions, prototypage. On passe du fichier à l’objet.",
   },
   {
     num: "03",
-    title: "Ancrer",
-    text: "Une présence qui tient dans le temps, pas une campagne jetable.",
+    title: "Imprimer",
+    text: "Tirages soignés, couleurs justes, rendu premium — prêt à circuler.",
   },
 ];
 
-const signals = ["Stratégie", "Identité", "Contenu", "Culture"];
+const signals = ["Design", "Fabrication", "Impression", "Finitions"];
 
 export function Manifesto() {
   return (
@@ -29,7 +29,6 @@ export function Manifesto() {
       id="manifeste"
       className="surface-grain relative overflow-hidden bg-psy-white py-24 md:py-32 lg:py-36"
     >
-      {/* Watermark subtil */}
       <div
         aria-hidden
         className="pointer-events-none absolute top-16 right-[-4%] select-none font-display text-[clamp(8rem,28vw,22rem)] leading-none font-extrabold tracking-[-0.08em] text-psy-black/[0.035] uppercase"
@@ -38,28 +37,26 @@ export function Manifesto() {
       </div>
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
-        {/* En-tête */}
         <div className="flex flex-wrap items-end justify-between gap-6 border-b border-psy-black/10 pb-8">
           <Reveal>
             <p className="text-[11px] font-medium tracking-[0.28em] text-psy-muted uppercase">
-              Manifeste
+              Le studio
             </p>
           </Reveal>
           <Reveal delay={0.08}>
             <p className="max-w-xs text-right text-sm leading-relaxed text-psy-black/50">
-              Agence de communication.
+              Design · Fabrication · Impression.
               <br />
-              On lit ce que les autres survolent.
+              Du concept au support physique.
             </p>
           </Reveal>
         </div>
 
-        {/* Titre + visuel */}
         <div className="mt-12 grid items-start gap-12 lg:mt-16 lg:grid-cols-[1.35fr_0.85fr] lg:gap-16">
           <div>
             <RevealText
               as="h2"
-              text="On lit entre les lignes. Puis on fait parler les marques."
+              text="On imagine. On fabrique. On imprime — sans rupture de chaîne."
               className="font-display text-[clamp(2.1rem,4.6vw,3.85rem)] leading-[1.06] font-bold tracking-[-0.035em] text-psy-black"
               delay={0.05}
             />
@@ -67,13 +64,13 @@ export function Manifesto() {
             <Reveal delay={0.18}>
               <div className="mt-10 grid gap-8 sm:grid-cols-2">
                 <p className="text-[15px] leading-relaxed text-psy-black/65 md:text-base">
-                  La communication, c’est de la psychologie appliquée. Nous
-                  décryptons les non-dits, les frictions, les désirs — puis nous
-                  les transformons en présence nette.
+                  LES PSY est un studio de création et de production. On prend
+                  en charge le design, la fabrication et l’impression pour des
+                  pièces nettes, tangibles, durables.
                 </p>
                 <p className="text-[15px] leading-relaxed text-psy-black/65 md:text-base">
-                  Moins de bruit. Plus de signal. Des identités et des récits
-                  qui restent, qui tranchent, qui font agir.
+                  Un seul interlocuteur : de la direction artistique au tirage
+                  final. Moins d’allers-retours, plus de précision.
                 </p>
               </div>
             </Reveal>
@@ -108,14 +105,13 @@ export function Manifesto() {
                   LES <span className="text-psy-red">PSY</span>
                 </p>
                 <p className="mt-2 text-[11px] tracking-[0.2em] text-psy-white/55 uppercase">
-                  Dualité · Précision · Impact
+                  Design · Fab · Print
                 </p>
               </div>
             </div>
           </Reveal>
         </div>
 
-        {/* Croyances */}
         <div className="mt-20 grid gap-0 border-t border-psy-black/10 md:mt-28 md:grid-cols-3">
           {beliefs.map((belief, index) => (
             <Reveal key={belief.num} delay={0.08 * index}>

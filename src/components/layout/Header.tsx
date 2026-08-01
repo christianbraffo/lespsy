@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import { ArrowCta } from "@/components/ui/ArrowCta";
 
 const links = [
-  { href: "#manifeste", label: "About" },
-  { href: "#selection", label: "Work" },
+  { href: "#manifeste", label: "Studio" },
+  { href: "#selection", label: "Réalisations" },
   { href: "#savoir-faire", label: "Services" },
-  { href: "#approche", label: "Insights" },
+  { href: "#approche", label: "Process" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -133,7 +133,7 @@ export function Header() {
               ))}
               <ArrowCta
                 href="#contact"
-                label="Démarrer un projet"
+                label="Demander un devis"
                 variant="red"
                 className="mt-10"
                 onClick={() => setOpen(false)}

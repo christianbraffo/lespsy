@@ -22,7 +22,7 @@ export function Footer() {
                 <span className="align-super text-[9px]">™</span>
               </p>
               <p className="mt-1 text-[11px] tracking-[0.18em] text-psy-white/40 uppercase">
-                Pas juste du design.
+                Design · Fabrication · Impression
               </p>
             </div>
           </div>

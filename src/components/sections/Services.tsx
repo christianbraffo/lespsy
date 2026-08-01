@@ -6,29 +6,29 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const services = [
   {
-    title: "Stratégie",
+    title: "Design",
     description:
-      "Positionnement, territoires de marque et plans d’action qui tranchent vraiment.",
+      "Identité visuelle, supports print, packaging, signalétique — une direction nette et cohérente.",
   },
   {
-    title: "Identité",
+    title: "Fabrication",
     description:
-      "Systèmes visuels radicaux — typo, signes, directions artistiques mémorables.",
+      "Prototypes, découpe, façonnage, assemblages. On passe du fichier à la pièce réelle.",
   },
   {
-    title: "Brand content",
+    title: "Impression",
     description:
-      "Récits éditoriaux et formats qui font sentir la marque, pas seulement la voir.",
+      "Offset, numérique, grand format. Couleurs maîtrisées, tirages propres, délais tenus.",
   },
   {
-    title: "Social",
+    title: "Finitions",
     description:
-      "Présence nette, rythme assumé, conversation utile — zéro bruit de fond.",
+      "Vernis, pelliculage, dorure, gaufrage, reliure — le détail qui change tout.",
   },
   {
-    title: "Campagnes",
+    title: "Objets & PLV",
     description:
-      "Idées qui percent : concept, déploiement, impact mesurable et culturel.",
+      "Kakémonos, stands, goodies, éditions limitées. Du support qui s’installe dans l’espace.",
   },
 ];
 
@@ -48,8 +48,8 @@ export function Services() {
         </Reveal>
         <Reveal delay={0.08}>
           <h2 className="font-display max-w-3xl text-[clamp(2rem,4.8vw,3.75rem)] leading-[1.05] font-bold tracking-[-0.03em]">
-            Ce que nous faisons,{" "}
-            <span className="text-psy-red italic">sans détour.</span>
+            De l’écran à la{" "}
+            <span className="text-psy-red italic">matière.</span>
           </h2>
         </Reveal>
 
